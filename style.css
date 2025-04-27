@@ -23,13 +23,25 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: 1px solid #ffffffbe;
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
 #loader{
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 999;
     background-color: #030303;
-    padding: 25vh 10vw;
+    padding: 15vh 5vw;
 }
 
 .line{
@@ -111,4 +123,65 @@ html, body {
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 7.5vw;
+}
+#nav-part2 h4{
+    font-weight: 500;
+}
+#nav-part3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav-part3 h4{
+    font-size: 1vw;
+    font-weight: 500;
+    /* font-family: 'silk serif'; */
+}
+.hero{
+    /* background-color: red; */
+    width: 73%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.hero:nth-child(2){
+    margin-top: 10vh;
+}
+.hero h1{
+    font-size: 7.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'plain regular';
+    line-height: 7vw;
+}
+.hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'plain regular';
+    line-height: 7vw;
+}
+#hero3 h3{
+    border-bottom: 0.7vw solid transparent;
+    padding-bottom: 0.4vw;
+}
+#hero3 h2{
+    border-bottom: 0.7vw solid #fff;
+    padding-bottom: 0.4vw;
+}
+#hero3 h2:hover{
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    border-bottom: 8px solid transparent;
 }
