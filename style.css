@@ -23,9 +23,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-body{
-    overflow-x:hidden;
-}
 #crsr{
     height: 2.5vw;
     width: 2.5vw;
